@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Football</button>
+    <button data-filter="architecture">Nature</button>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item nature"><img src="img/img1.jpg" alt="Football 1" /></div>
+    <div class="gallery-item nature"><img src="img/img4.jpg" alt="Football 2" /></div>
+    <div class="gallery-item nature"><img src="img/img3.jpg" alt="Football 4" /></div>
+    <div class="gallery-item nature"><img src="img/img12.jpg" alt="Football 5" /></div>
+    <div class="gallery-item architecture"><img src="img/na1.jpg" alt="Architecture 1" /></div>
+    <div class="gallery-item architecture"><img src="img/na2.jpg" alt="Architecture 2" /></div>
+    <div class="gallery-item architecture"><img src="img/na3.jpg" alt="Architecture 3" /></div>
+    <div class="gallery-item architecture"><img src="img/na4.jpg" alt="Architecture 4" /></div>
+   
+  </div>
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" />
+  </div>
+  <div class="pagination">
+    <button class="prev">Previous</button>
+    <span class="page-info">Page 1 of 3</span>
+    <button class="next">Next</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
